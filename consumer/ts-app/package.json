@@ -1,0 +1,12 @@
+{
+  "name": "ts-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsc && node dist/app"
+  },
+  "dependencies": {
+    "@types/node": "^16.3.3",
+    "typescript": "^4.3.5"
+  }
+}

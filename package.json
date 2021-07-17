@@ -2,7 +2,11 @@
   "name": "typescript-jsdoc-sandbox",
   "private": true,
   "scripts": {
-    "workspace:install": "cd node_modules/typed-lib && npm install",
-    "test": "cd node_modules/typed-lib && npm test"
+    "lib:install": "cd node_modules/typed-lib && npm install",
+    "ts-app:install": "cd consumer/ts-app && npm install",
+    "workspace:install": "npm run lib:install && npm run ts-app:install",
+    "lib:test": "cd node_modules/typed-lib && npm test",
+    "ts-app:test": "cd consumer/ts-app && npm test",
+    "test": "npm run lib:test && npm run ts-app:test"
   }
 }
