@@ -3,10 +3,12 @@
   "private": true,
   "scripts": {
     "lib:install": "cd node_modules/typed-lib && npm install",
+    "js-app:install": "cd consumer/js-app && npm install",
     "ts-app:install": "cd consumer/ts-app && npm install",
-    "workspace:install": "npm run lib:install && npm run ts-app:install",
+    "workspace:install": "npm run lib:install && npm run ts-app:install && npm run js-app:install",
     "lib:test": "cd node_modules/typed-lib && npm test",
+    "js-app:test": "cd consumer/js-app && npm test",
     "ts-app:test": "cd consumer/ts-app && npm test",
-    "test": "npm run lib:test && npm run ts-app:test"
+    "test": "npm run lib:test && npm run ts-app:test && npm run js-app:test"
   }
 }
