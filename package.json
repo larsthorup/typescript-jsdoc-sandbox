@@ -1,0 +1,8 @@
+{
+  "name": "typescript-jsdoc-sandbox",
+  "private": true,
+  "scripts": {
+    "install": "cd node_modules/typed-lib && npm install",
+    "test": "cd node_modules/typed-lib && npm test"
+  }
+}
